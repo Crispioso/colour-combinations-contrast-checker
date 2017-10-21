@@ -1,0 +1,74 @@
+$base-font-size: 1rem;
+$primary-button-color: #4a8b3b;
+$link-color: #336699;
+$focus-color: #ff9a00;
+$warning-color: #CC0000;
+
+html, body {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0 3rem;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.button {
+  padding: 1rem;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  font-size: $base-font-size;
+  background-color: $primary-button-color;
+  color: #fff;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 3px solid $focus-color;
+  }
+
+  &--plain {
+    color: $link-color;
+    background-color: transparent;
+    padding: 0;
+    text-decoration: underline;
+  }
+}
+
+.input {
+  margin-bottom: 1.5rem;
+
+  label {
+    display: block;
+  }
+
+  input {
+    padding: 0.5rem 0.5rem;
+    border: 2px solid #969696;
+
+    &:focus {
+      outline: 3px solid $focus-color;
+    }
+  }
+
+  button {
+    margin-left: 1rem;
+  }
+}
+
+.inputs {
+  margin-bottom: 3rem;
+
+  &__error {
+    color: $warning-color;
+  }
+}
